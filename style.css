@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Calistoga', sans-serif;
+    background: #F6F2D4;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+.main-login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-login {
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    background: #73937E;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login > h1 {
+    color: #E0AD3A;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.left-login > h2 {
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.left-login__img {
+ width: 37vw;
+ margin-bottom: 20px;
+}
+
+.btn-icon {
+    width: 60%;
+    padding: 15px;
+    margin: 20px;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #5C6B73;
+    background: #E5E5E5;
+    cursor: pointer;
+    box-shadow: 0px 18px 40px -12px gray;
+}
+
+
+.btn-icon > img {
+   width: 23px;
+   height: 23px;
+   margin-right: 13px
+} 
+
+.right-login {
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+}
+
+.card-login > h1 {
+    color: black;
+    font-weight: bold;
+    margin: 0;
+    font-size: 39px;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.textfield > input {
+    width: 580px;
+    height: 75px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: whitesmoke;
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14pt;
+    box-shadow: 0 20px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 14pt;
+}
+
+.textfield > input::placeholder {
+    color: black;
+    font-size: 20px;
+}
+
+.btn-login {
+    width: 50%;
+    padding: 15px;
+    margin: 25px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: black;
+    background: #73937E;
+    cursor: pointer;
+    box-shadow: 0px 18px 40px -12px #00ff8052;
+}
+
+.card-login__text {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 950px) {
+    .left-login {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        background: #73937E;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-login {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+ .btn-icon > img {
+     width: 50px;
+     height: 50px;
+ }
+
+ .btn-icon {
+     font-size: 0px;
+ }
+ 
+    .card-login {
+        width: 50vw;
+        height: auto;
+    }
+    .btn-login {
+        width: 40vw;
+        height: auto;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main-login{
+        flex-direction: column;
+    }
+
+    .left-login  {
+        display: none;
+    }
+
+    .right-login {
+        width: 90%;
+        height: auto;
+    }
+
+    .card-login {
+        width: 50vw;
+        height: auto;
+    }
+
+    .textfield > input {
+        width: 50vw;
+        height: auto;
+    }
+}
